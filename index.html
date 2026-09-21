@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monsieur+La+Doulaise&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>ElectroStore</title>
 </head>
 <body>
     <header class="header">
         <h2 class="h2">ElectroStore</h2>
         <nav class="nav">
             <ul class="ul">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Adresse</a></li>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Produit">Produits</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Address">Addresse</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +23,8 @@
         <h3 class="Bienvenue">Bienvenue dans votre spécialisé dans la vente <br>
         de matriéls électronique.</h3>
         <h3>Notre dernière collection.</h3>
-        <div class="produit">
+        <div id="Produit">
+        <div class="produit" >
             <div class="p1">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqnXfTApBrowyJOj3x4bTXqrWCRGrft8cwsDRfAeq-g&s=10" alt="" width="150px" height="150px">
                 <p> <b>Hp elitebook</b> <br>
@@ -69,6 +71,94 @@
             </div>
              
         </div>
-    </main>
+        </div>
+
+        <br> <br> <br>
+        <div class="formulaire">
+            
+            <form action="">
+                <fieldset>
+                <legend>Informations personnelles</legend>
+                <label for="name">Nom</label>
+                <input type="text" placeholder="Entrez votre nom" required > <br>
+                <label for="prénom">Prénom</label>
+                <input type="text" placeholder="Entrez votre Prénom" required> <br>
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Entrez votre Email" required> <br>
+                <label for="Téléphone">Téléphone</label>
+                <input type="tel" placeholder="Entrez votre Téléphone" required minlength="9" maxlength="12"> <br> <br>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+                </fieldset>  <br> <br> 
+
+                <fieldset>
+                <legend>Informations concernant les produits</legend>
+                <p>Nos produits disponible.</p>
+                <input type="checkbox" value="Ordinateur Mac Book Air">
+                <label for="text">Ordinateur Mac Book Air</label> <br>
+                <input type="checkbox" value="Ordinateur SamSung">
+                <label for="text">Ordinateur SamSung</label> <br>
+                <input type="checkbox" value="Iphone 17">
+                <label for="text">Iphone 17</label> <br>
+                <input type="checkbox" value="SamSung Ultra s24">
+                <label for="text">SamSung Ultra s24</label> <br>
+                <input type="checkbox" value="SamSung Ultra s23">
+                <label for="text">SamSung Ultra s23</label> <br>
+                <input type="checkbox" value="SamSung Ultra s22">
+                <label for="text">SamSung Ultra s22</label> <br>
+                <p>Mode de payement</p>
+                <input type="radio" value="payement unique" id="payement" name="payement">
+                <label for="text">payement Unique</label> <br>
+                <input type="radio" value="payement en Tranche" id="payement"  name="payement">
+                <label for="text">payement en Tranche</label> <br>
+
+                 <br> 
+                <p>Sélectionner l'adresse de livraison</p>
+                <select name="ville" id="ville">
+                    <option value="Dakar">Dakar</option>
+                    <option value="Pikine">Pikine</option>
+                    <option value="Guédiawaye">Guédiawaye</option>
+                    <option value="Thiés">Thiés</option>
+                    <option value="Mbour">Mbour</option> 
+                </select> <br> <br>
+                    <input type="button" value="Commander"> 
+                    <input type="button" value="Annuler">
+                    
+                </fieldset>
+
+                
+            </form>
+        </div>
+        <div>
+            <p id="Accueil">
+                Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. <br>
+                 Nulla est impedit quos rem iure,
+                  provident nesciunt adipisci et 
+                  ab cumque sed accusamus voluptates,<br>
+                   labore quae quia blanditiis!
+                    Ipsa quas aut cumque cum doloremque <br>
+                    id sapiente ipsum neque aperiam harum deserunt, <br>
+                     perspiciatis nostrum quae ab blanditiis <br>
+                      voluptatibus recusandae quam.
+            </p>
+        </div> <br> 
+        <div id="Contact">
+            <p><b>Nos coordonnées</b></p>
+             <a href="https://wa.me/+221779262833" target="_blank">
+               Contactez-nous sur WhatsApp
+             </a>
+             <br> <br>
+             <a href="mailto:contact@exemple.com">
+             cheikhkonte70@gmail.com
+             </a>
+        </div> <br>
+        <div id="Address">
+            <p><b>Address : </b></p>
+            <Address>Yeumbeul nord à Côté de la Station</Address>
+        </div>
+    </main> 
+    <br> <br>
+    <footer class="footer">&copy;  Mister-Cheikh 2026 Tous droits Reservés</footer>
 </body>
 </html>
